@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Thasadith', sans-serif;
+    background-image: linear-gradient(to bottom, white, rgb(220, 225, 236));
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 40px 40px 50px 40px;
+    box-sizing: border-box;
+}
+
+.main {
+    margin-top: auto;
+}
+
+.main .name {
+    font-weight: 700;
+}
+
+.main .sub-title {
+    font-weight: 400;
+}
+
+.main .social-bar .icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px 3px;
+    /* mask-size: cover;
+    -webkit-mask-size: cover; */
+    transition: background-color 300ms;
+    background-color: #797979;
+}
+.main .social-bar .icon:hover {
+    background-color: black;
+}
+
+.main .social-bar .icon.instagram {
+    mask: url('./images/instagram.svg') no-repeat 50% 50%;
+    -webkit-mask: url('./images/instagram.svg') no-repeat 50% 50%;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+.main .social-bar .icon.youtube {
+    mask: url('./images/youtube.svg') no-repeat 50% 50%;
+    -webkit-mask: url('./images/youtube.svg') no-repeat 50% 50%;
+}
+
+.main .social-bar .icon.github {
+    mask: url('./images/github.svg') no-repeat 50% 50%;
+    -webkit-mask: url('./images/github.svg') no-repeat 50% 50%;
+}
+
+
+.main-wrapper .top-circle {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-image: linear-gradient(to right, rgb(255, 25, 188), rgb(244, 47, 57));
+    background-color: red;
+    top: -250px;
+    left: -100px;
+    z-index: -1;
+}
+
+.circle-wrapper{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+    width: 180px;
+}
+
+.main-wrapper .bottom-circle {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, rgb(44, 98, 254), rgb(28, 195, 230));
+    bottom: -130px;
+    right: -70px;
+    z-index: -1;
+}
