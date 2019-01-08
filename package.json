@@ -1,0 +1,19 @@
+{
+  "name": "withcheesepls.github.io",
+  "version": "1.0.0",
+  "description": "Home Page designed by Bartosz Pobocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node -e 'require(`BrowserRefresh`)();'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github_withcheesepls:withcheesepls/withcheesepls.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserrefresh": "file:../BrowserRefresh"
+  }
+}
